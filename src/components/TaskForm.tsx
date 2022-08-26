@@ -31,8 +31,8 @@ export default function TaskForm({ addANewTask }: Props) {
   };
 
   return (
-    <div className="card card-body bg-secondary text-dark">
-      <h1>Add Task</h1>
+    <div className="card card-body bg-secondary">
+      <h2 className="mb-4">Add Task</h2>
 
       <form onSubmit={handleNewTask}>
         <input
@@ -55,9 +55,9 @@ export default function TaskForm({ addANewTask }: Props) {
           value={task.description}
         ></textarea>
 
-        <button className="btn btn-primary">
+        <button className="btn btn-primary d-flex justify-content-center align-items-center">
           Save
-          <AiOutlinePlus />
+          <AiOutlinePlus className="font-bold ms-1" />
         </button>
       </form>
     </div>

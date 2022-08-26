@@ -7,7 +7,7 @@ interface Props {
 
 export default function TaskCard({ task, deleteATask }: Props) {
   return (
-    <div className="card card-body bg-secondary rounded-0 text-dark">
+    <div className="card card-body bg-secondary rounded-0">
       <h2>{task.title}</h2>
       <p>{task.id}</p>
       <p>{task.description}</p>
